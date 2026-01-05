@@ -1,0 +1,5 @@
+gradio>=4.0.0
+llama-cpp-python[server]>=0.2.26
+langchain-chroma>=0.1.2
+langchain-community>=0.0.10
+pypdf>=3.0.0

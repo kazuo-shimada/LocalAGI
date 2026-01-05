@@ -1,0 +1,14 @@
+# Ignore the virtual environment (it's specific to your machine)
+venv/
+my_env/
+
+# Ignore the massive model files (Mentor must download these separately)
+models/*.gguf
+
+# Ignore the local database (Let the mentor build their own)
+chroma_db/
+
+# Ignore Mac and Python junk files
+__pycache__/
+.DS_Store
+*.pyc
