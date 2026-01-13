@@ -2,6 +2,7 @@ import gradio as gr
 from llama_cpp import Llama
 import os
 import glob
+import re
 from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
@@ -60,7 +61,7 @@ def load_models(chat_model, vis_model, emb_model):
     
     return "✅ Chat Only (No RAG)", gr.update(interactive=True), gr.update(interactive=True)
 
-# --- INGESTION (The "Magnet" stays!) ---
+# --- INGESTION (DUAL INDEXING) ---
 def ingest(files):
     if not VECTOR_STORE: return "⚠️ Load Embedding Model first!"
     if not files: return "No files provided"
@@ -72,14 +73,29 @@ def ingest(files):
         try:
             if path.endswith(".txt"):
                 with open(path, "r", encoding="utf-8") as f:
-                    lines = f.readlines()
+                    lines = [line.strip() for line in f.readlines() if line.strip()]
                 
-                # The "Magnet" Header
-                numbered_content = "### START OF THE LIST / BEGINNING OF DOCUMENT ###\n"
+                # --- DUAL INDEXING LOGIC ---
+                # We stamp physical position [Row X] AND logical content (Item #Y)
+                
+                content_block = "### START OF DOCUMENT / TOP OF PHYSICAL LIST ###\n"
+                
                 for i, line in enumerate(lines):
-                    numbered_content += f"Line {i+1}: {line}"
+                    # Physical Row Index (1-based)
+                    row_idx = i + 1
+                    
+                    # Regex to detect logical numbers like "10. Name" or "10 Name"
+                    match = re.search(r'^(\d+)', line)
+                    if match:
+                        logical_num = match.group(1)
+                        # Format: [Row 1] (Item #10) 10. Zinc
+                        stamped_line = f"[Row {row_idx}] (Item #{logical_num}) {line}"
+                    else:
+                        stamped_line = f"[Row {row_idx}] {line}"
+                    
+                    content_block += stamped_line + "\n"
                 
-                docs.append(Document(page_content=numbered_content, metadata={"source": path}))
+                docs.append(Document(page_content=content_block, metadata={"source": path}))
             
             elif path.endswith(".pdf"): 
                 loader = PyPDFLoader(path)
@@ -90,10 +106,10 @@ def ingest(files):
             
     if docs:
         VECTOR_STORE.add_documents(splitter.split_documents(docs))
-        return f"✅ Ingested {len(docs)} chunks. (Magnet Active)"
+        return f"✅ Ingested {len(docs)} chunks. (Dual Indexing Active)"
     return "No documents found."
 
-# --- AGENT PIPELINE (Loop Fix) ---
+# --- AGENT PIPELINE ---
 def run_agent_pipeline(user_query, history_state, system_prompt):
     if not CHAT_MODEL:
         yield history_state, "⚠️ Model not loaded."
@@ -108,8 +124,18 @@ def run_agent_pipeline(user_query, history_state, system_prompt):
     search_query = user_query
 
     if VECTOR_STORE:
-        # 1. Rewrite (Keep this, it's working)
-        rewrite_prompt = f"Rewrite to be specific: '{user_query}'"
+        # 1. Rewrite Query (Enhanced for "First Listed" vs "#1")
+        rewrite_prompt = f"""
+        TASK: Clarify the search intent.
+        USER QUERY: "{user_query}"
+        
+        INSTRUCTIONS:
+        1. IF query asks for "first listed", "top of list", "start of list", or "physically first" -> OUTPUT: "Search for [Row 1]"
+        2. IF query asks for "number 1", "item 1", "#1", or "rank 1" -> OUTPUT: "Search for (Item #1)"
+        3. OTHERWISE -> Output specific keywords.
+        
+        OUTPUT ONLY THE REWRITTEN QUERY.
+        """
         try:
             rewrite_response = CHAT_MODEL.create_chat_completion(
                 messages=[{"role": "user", "content": rewrite_prompt}],
@@ -119,9 +145,9 @@ def run_agent_pipeline(user_query, history_state, system_prompt):
         except:
             pass 
 
-        # 2. Retrieve (Magnet + Query)
+        # 2. Retrieve (Hybrid)
         results = VECTOR_STORE.similarity_search(search_query, k=RETRIEVAL_K)
-        anchor_docs = VECTOR_STORE.similarity_search("START OF THE LIST BEGINNING OF DOCUMENT", k=1)
+        anchor_docs = VECTOR_STORE.similarity_search("START OF DOCUMENT TOP OF PHYSICAL LIST", k=1)
         
         combined_docs = anchor_docs + results
         seen = set()
@@ -136,20 +162,32 @@ def run_agent_pipeline(user_query, history_state, system_prompt):
         else:
             final_context = "NO_DATA_FOUND"
 
-    # 3. GENERATE (The Fix is Here)
+    # 3. Generate
     if final_context == "NO_DATA_FOUND":
         sys_instruction = "You are a helpful assistant. Admit you found no documents."
         final_prompt = user_query
     elif final_context:
-        # FIX: Move instructions to System Prompt ONLY. 
-        # Do not repeat them in the User Prompt.
-        sys_instruction = system_prompt + "\n\nCRITICAL RULE: The text uses explicit line numbers (Line 1: ...). You MUST trust these numbers to determine the order."
+        # --- THE FIX: FEW-SHOT EXAMPLES ---
+        # We give the model a script to follow so it understands the difference.
         
-        # Clean Final Prompt: Just Context + Question
-        final_prompt = f"""### CONTEXT (From Database):
+        sys_instruction = system_prompt + """
+        
+        CRITICAL RULES FOR LISTS:
+        1. [Row X] = Physical Position (Where it sits in the file).
+        2. (Item #X) = Logical Number (The number written next to the name).
+        
+        EXAMPLES:
+        User: "Who is the first listed name?"
+        Assistant: THOUGHT: User asked for physical position ("listed first"). I will look for [Row 1]. -> ANSWER: The first listed name is [Row 1] Name.
+        
+        User: "Who is number 1?"
+        Assistant: THOUGHT: User asked for the logical number ("#1"). I will look for (Item #1). -> ANSWER: Number 1 is (Item #1) Name.
+        """
+        
+        final_prompt = f"""### CONTEXT:
 {final_context}
 
-### USER QUESTION:
+### QUESTION:
 {user_query}
 """
     else:
@@ -202,11 +240,8 @@ with gr.Blocks(title="LocalAGI Agent") as demo:
             ingest_status = gr.Textbox(label="Log")
             
             with gr.Accordion("⚙️ System Prompt", open=False):
-                # Simplified System Prompt to reduce confusion
                 default_sys = """You are a helpful Data Analyst.
-1. Answer based ONLY on the provided Context.
-2. Start your answer with "THOUGHT:" to briefly explain which line number you found the answer on.
-3. Then provide the final "ANSWER:"."""
+Answer based ONLY on the provided Context."""
                 sys_box = gr.Textbox(value=default_sys, lines=4)
 
         with gr.Column(scale=2):
