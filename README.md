@@ -7,7 +7,7 @@ Unlike basic search tools, LocalAGI features a **Python Logic Layer** that filte
 ## 🚀 Key Features
 
 * **👁️ Visual Look-Ahead:** Uses `MiniCPM-V 2.6` to scan bottle labels via OCR (Optical Character Recognition).
-* **🍷 Sommelier Intelligence:** Understads flavor profiles (e.g., "Sour," "Bozy," "Floral"). You can ask, *"I want something sweet with this Tequila,"* and it will filter the results accordingly.
+* **🍷 Sommelier Intelligence:** Understads flavor profiles (e.g., "Sour," "Boozy," "Floral"). You can ask, *"I want something sweet with this Tequila,"* and it will filter the results accordingly.
 * **🧠 Logic Filter (The "Smart Bartender"):** A Python algorithm that aggressively removes irrelevant recipes *before* the AI sees them. If you scan Tequila, it physically deletes Gin recipes from the context window to prevent confusion.
 * **🔪 Hard-Slice Ingestion:** Custom ingestion engine that splits files by explicit delimiters (`---`), allowing for precision retrieval of specific recipes.
 * **🧹 Nuclear Memory Wipe:** Automatically clears the vector database on startup and ingestion to ensure no "ghost data" remains from previous sessions.
