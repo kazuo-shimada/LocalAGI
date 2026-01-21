@@ -1,0 +1,1711 @@
+Recipe: Martini
+Base Spirit: Gin
+Taste Profile: Dry, Crisp, Strong
+Ingredients: 2.5 oz gin, 0.5 oz dry vermouth, lemon twist or olive
+Instructions: Stir with ice, strain into chilled glass, garnish.
+
+⸻
+
+Recipe: Manhattan
+Base Spirit: Whiskey
+Taste Profile: Strong, Sweet, Bitter
+Ingredients: 2 oz rye whiskey, 1 oz sweet vermouth, 2 dashes Angostura bitters
+Instructions: Stir with ice, strain into coupe, garnish with cherry.
+
+⸻
+
+Recipe: Old Fashioned
+Base Spirit: Whiskey
+Taste Profile: Strong, Bitter, Slightly Sweet
+Ingredients: 2 oz bourbon, 1 sugar cube, 2 dashes Angostura bitters, splash water
+Instructions: Muddle sugar and bitters, add whiskey and ice, stir.
+
+⸻
+
+Recipe: Negroni
+Base Spirit: Gin
+Taste Profile: Bitter, Herbal, Strong
+Ingredients: 1 oz gin, 1 oz Campari, 1 oz sweet vermouth
+Instructions: Stir with ice, strain over fresh ice, garnish orange peel.
+
+⸻
+
+Recipe: Margarita
+Base Spirit: Tequila
+Taste Profile: Sour, Bright, Refreshing
+Ingredients: 2 oz tequila, 1 oz lime juice, 1 oz triple sec
+Instructions: Shake with ice, strain into salt-rimmed glass.
+
+⸻
+
+Recipe: Daiquiri
+Base Spirit: Rum
+Taste Profile: Sour, Crisp, Light
+Ingredients: 2 oz white rum, 1 oz lime juice, 0.75 oz simple syrup
+Instructions: Shake with ice, strain into chilled coupe.
+
+⸻
+
+Recipe: Mojito
+Base Spirit: Rum
+Taste Profile: Fresh, Sweet, Minty
+Ingredients: 2 oz white rum, 1 oz lime juice, 0.75 oz simple syrup, mint, soda water
+Instructions: Muddle mint with syrup and lime, add rum and ice, top soda.
+
+⸻
+
+Recipe: Whiskey Sour
+Base Spirit: Whiskey
+Taste Profile: Sour, Balanced, Smooth
+Ingredients: 2 oz bourbon, 1 oz lemon juice, 0.75 oz simple syrup
+Instructions: Shake with ice, strain over ice.
+
+⸻
+
+Recipe: Tom Collins
+Base Spirit: Gin
+Taste Profile: Light, Citrusy, Refreshing
+Ingredients: 2 oz gin, 1 oz lemon juice, 0.75 oz simple syrup, soda water
+Instructions: Build over ice, top with soda.
+
+⸻
+
+Recipe: Gimlet
+Base Spirit: Gin
+Taste Profile: Tart, Clean, Crisp
+Ingredients: 2 oz gin, 0.75 oz lime juice, 0.75 oz simple syrup
+Instructions: Shake with ice, strain into coupe.
+
+⸻
+
+Recipe: Sidecar
+Base Spirit: Brandy
+Taste Profile: Dry, Citrusy, Strong
+Ingredients: 2 oz cognac, 1 oz triple sec, 0.75 oz lemon juice
+Instructions: Shake with ice, strain into sugar-rimmed glass.
+
+⸻
+
+Recipe: French 75
+Base Spirit: Gin
+Taste Profile: Bright, Fizzy, Dry
+Ingredients: 1 oz gin, 0.5 oz lemon juice, 0.5 oz simple syrup, champagne
+Instructions: Shake first three, top with champagne.
+
+⸻
+
+Recipe: Paloma
+Base Spirit: Tequila
+Taste Profile: Bitter, Citrusy, Refreshing
+Ingredients: 2 oz tequila, 2 oz grapefruit soda, 0.5 oz lime juice
+Instructions: Build over ice, stir gently.
+
+⸻
+
+Recipe: Mint Julep
+Base Spirit: Whiskey
+Taste Profile: Sweet, Herbal, Strong
+Ingredients: 2.5 oz bourbon, 0.5 oz simple syrup, mint
+Instructions: Muddle mint and syrup, add crushed ice and bourbon.
+
+⸻
+
+Recipe: Caipirinha
+Base Spirit: Rum
+Taste Profile: Tart, Fresh, Bold
+Ingredients: 2 oz cachaça, 1 lime, 2 tsp sugar
+Instructions: Muddle lime and sugar, add ice and spirit.
+
+⸻
+
+Recipe: Bloody Mary
+Base Spirit: Vodka
+Taste Profile: Savory, Spicy, Tangy
+Ingredients: 2 oz vodka, 4 oz tomato juice, lemon juice, Worcestershire, hot sauce
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Cosmopolitan
+Base Spirit: Vodka
+Taste Profile: Tart, Fruity, Crisp
+Ingredients: 1.5 oz vodka, 1 oz cranberry juice, 0.5 oz triple sec, 0.5 oz lime juice
+Instructions: Shake with ice, strain into martini glass.
+
+⸻
+
+Recipe: Moscow Mule
+Base Spirit: Vodka
+Taste Profile: Spicy, Refreshing, Tart
+Ingredients: 2 oz vodka, 0.5 oz lime juice, ginger beer
+Instructions: Build over ice in copper mug.
+
+⸻
+
+Recipe: White Russian
+Base Spirit: Vodka
+Taste Profile: Creamy, Sweet, Rich
+Ingredients: 2 oz vodka, 1 oz coffee liqueur, 1 oz cream
+Instructions: Build over ice, float cream.
+
+⸻
+
+Recipe: Black Russian
+Base Spirit: Vodka
+Taste Profile: Strong, Sweet, Bold
+Ingredients: 2 oz vodka, 1 oz coffee liqueur
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Aperol Spritz
+Base Spirit: Vodka
+Taste Profile: Bitter, Light, Fizzy
+Ingredients: 3 oz prosecco, 2 oz Aperol, 1 oz soda water
+Instructions: Build over ice, garnish orange.
+
+⸻
+
+Recipe: Boulevardier
+Base Spirit: Whiskey
+Taste Profile: Bitter, Rich, Strong
+Ingredients: 1.5 oz bourbon, 1 oz Campari, 1 oz sweet vermouth
+Instructions: Stir with ice, strain over ice.
+
+⸻
+
+Recipe: Vesper
+Base Spirit: Gin
+Taste Profile: Dry, Sharp, Strong
+Ingredients: 3 oz gin, 1 oz vodka, 0.5 oz Lillet Blanc
+Instructions: Shake with ice, strain, garnish lemon peel.
+
+⸻
+
+Recipe: Corpse Reviver No. 2
+Base Spirit: Gin
+Taste Profile: Citrusy, Herbal, Dry
+Ingredients: 0.75 oz gin, 0.75 oz triple sec, 0.75 oz Lillet Blanc, 0.75 oz lemon juice
+Instructions: Shake with ice, strain into coupe.
+
+⸻
+
+Recipe: Aviation
+Base Spirit: Gin
+Taste Profile: Floral, Dry, Light
+Ingredients: 2 oz gin, 0.5 oz lemon juice, 0.25 oz maraschino liqueur, 0.25 oz crème de violette
+Instructions: Shake with ice, strain into coupe.
+
+⸻
+
+Recipe: Pisco Sour
+Base Spirit: Brandy
+Taste Profile: Creamy, Sour, Bright
+Ingredients: 2 oz pisco, 1 oz lemon juice, 0.75 oz simple syrup, egg white
+Instructions: Dry shake then shake with ice, strain.
+
+⸻
+
+Recipe: Sazerac
+Base Spirit: Whiskey
+Taste Profile: Strong, Herbal, Dry
+Ingredients: 2 oz rye whiskey, sugar cube, Peychaud’s bitters, absinthe rinse
+Instructions: Stir whiskey with sugar and bitters, serve in rinsed glass.
+
+⸻
+
+Recipe: Brandy Alexander
+Base Spirit: Brandy
+Taste Profile: Creamy, Sweet, Rich
+Ingredients: 2 oz cognac, 1 oz crème de cacao, 1 oz cream
+Instructions: Shake with ice, strain, garnish nutmeg.
+
+⸻
+
+Recipe: Dark ’n Stormy
+Base Spirit: Rum
+Taste Profile: Spicy, Sweet, Bold
+Ingredients: 2 oz dark rum, ginger beer, lime wedge
+Instructions: Build over ice, float rum.
+
+⸻
+
+Recipe: Mai Tai
+Base Spirit: Rum
+Taste Profile: Tropical, Sweet, Nutty
+Ingredients: 2 oz aged rum, 0.75 oz lime juice, 0.5 oz orange curaçao, 0.5 oz orgeat
+Instructions: Shake with ice, strain over crushed ice.
+
+⸻
+
+Recipe: Zombie
+Base Spirit: Rum
+Taste Profile: Strong, Fruity, Complex
+Ingredients: 1.5 oz light rum, 1.5 oz dark rum, fruit juices, grenadine
+Instructions: Shake with ice, serve over crushed ice.
+
+⸻
+
+Recipe: Painkiller
+Base Spirit: Rum
+Taste Profile: Creamy, Tropical, Sweet
+Ingredients: 2 oz dark rum, 4 oz pineapple juice, 1 oz orange juice, 1 oz cream of coconut
+Instructions: Shake with ice, strain over ice.
+
+⸻
+
+Recipe: Piña Colada
+Base Spirit: Rum
+Taste Profile: Sweet, Creamy, Tropical
+Ingredients: 2 oz rum, 3 oz pineapple juice, 1 oz cream of coconut
+Instructions: Shake or blend with ice.
+
+⸻
+
+Recipe: Cuba Libre
+Base Spirit: Rum
+Taste Profile: Sweet, Fizzy, Bright
+Ingredients: 2 oz rum, cola, lime wedge
+Instructions: Build over ice, squeeze lime.
+
+⸻
+
+Recipe: Gin Fizz
+Base Spirit: Gin
+Taste Profile: Light, Citrusy, Fizzy
+Ingredients: 2 oz gin, 1 oz lemon juice, 0.75 oz simple syrup, soda water
+Instructions: Shake first three, top with soda.
+
+⸻
+
+Recipe: Ramos Gin Fizz
+Base Spirit: Gin
+Taste Profile: Creamy, Floral, Light
+Ingredients: Gin, lemon juice, lime juice, cream, egg white, orange flower water
+Instructions: Shake vigorously, top with soda.
+
+⸻
+
+Recipe: Clover Club
+Base Spirit: Gin
+Taste Profile: Fruity, Creamy, Tart
+Ingredients: 2 oz gin, 0.75 oz lemon juice, 0.75 oz raspberry syrup, egg white
+Instructions: Dry shake then shake with ice.
+
+⸻
+
+Recipe: Bee’s Knees
+Base Spirit: Gin
+Taste Profile: Sweet, Citrusy, Smooth
+Ingredients: 2 oz gin, 0.75 oz lemon juice, 0.75 oz honey syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Penicillin
+Base Spirit: Whiskey
+Taste Profile: Smoky, Spicy, Sweet
+Ingredients: 2 oz blended scotch, 0.75 oz lemon juice, 0.75 oz honey-ginger syrup, float peated scotch
+Instructions: Shake base ingredients, strain, float scotch.
+
+⸻
+
+Recipe: Rusty Nail
+Base Spirit: Whiskey
+Taste Profile: Sweet, Strong, Herbal
+Ingredients: 2 oz scotch, 1 oz Drambuie
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Irish Coffee
+Base Spirit: Whiskey
+Taste Profile: Warm, Sweet, Rich
+Ingredients: 1.5 oz Irish whiskey, hot coffee, sugar, cream
+Instructions: Stir whiskey and sugar into coffee, float cream.
+
+⸻
+
+Recipe: Godfather
+Base Spirit: Whiskey
+Taste Profile: Sweet, Strong, Smooth
+Ingredients: 2 oz scotch, 1 oz amaretto
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Godmother
+Base Spirit: Vodka
+Taste Profile: Sweet, Smooth, Strong
+Ingredients: 2 oz vodka, 1 oz amaretto
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Sex on the Beach
+Base Spirit: Vodka
+Taste Profile: Sweet, Fruity, Light
+Ingredients: 2 oz vodka, peach schnapps, cranberry juice, orange juice
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Tequila Sunrise
+Base Spirit: Tequila
+Taste Profile: Sweet, Fruity, Smooth
+Ingredients: 2 oz tequila, orange juice, grenadine
+Instructions: Build over ice, float grenadine.
+
+⸻
+
+Recipe: Long Island Iced Tea
+Base Spirit: Vodka
+Taste Profile: Strong, Sweet, Balanced
+Ingredients: Vodka, gin, rum, tequila, triple sec, lemon juice, cola
+Instructions: Shake spirits and lemon, top with cola.
+
+⸻
+
+Recipe: Amaretto Sour
+Base Spirit: Whiskey
+Taste Profile: Sweet, Sour, Smooth
+Ingredients: 1.5 oz amaretto, 0.75 oz bourbon, lemon juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Espresso Martini
+Base Spirit: Vodka
+Taste Profile: Bitter, Rich, Strong
+Ingredients: 2 oz vodka, 1 oz espresso, 0.75 oz coffee liqueur
+Instructions: Shake hard with ice, strain.
+
+⸻
+
+Recipe: French Connection
+Base Spirit: Brandy
+Taste Profile: Sweet, Strong, Smooth
+Ingredients: 2 oz cognac, 1 oz amaretto
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Harvey Wallbanger
+Base Spirit: Vodka
+Taste Profile: Sweet, Citrusy, Herbal
+Ingredients: 2 oz vodka, orange juice, Galliano float
+Instructions: Build over ice, float Galliano.
+
+⸻
+
+Recipe: Bellini
+Base Spirit: Brandy
+Taste Profile: Fruity, Light, Fizzy
+Ingredients: Peach purée, prosecco
+Instructions: Combine gently in flute.
+
+⸻
+
+Recipe: Mimosa
+Base Spirit: Brandy
+Taste Profile: Light, Fresh, Citrusy
+Ingredients: Orange juice, champagne
+Instructions: Combine equal parts chilled.
+
+⸻
+
+Recipe: Kir Royale
+Base Spirit: Brandy
+Taste Profile: Sweet, Bright, Fizzy
+Ingredients: Crème de cassis, champagne
+Instructions: Add cassis, top with champagne.
+
+⸻
+
+Recipe: Champagne Cocktail
+Base Spirit: Brandy
+Taste Profile: Dry, Light, Aromatic
+Ingredients: Sugar cube, bitters, champagne, cognac
+Instructions: Soak sugar with bitters, top champagne.
+
+⸻
+
+Recipe: Between the Sheets
+Base Spirit: Brandy
+Taste Profile: Dry, Citrusy, Strong
+Ingredients: Cognac, white rum, triple sec, lemon juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Planter’s Punch
+Base Spirit: Rum
+Taste Profile: Fruity, Sweet, Strong
+Ingredients: Dark rum, citrus juices, grenadine
+Instructions: Shake with ice, strain over ice.
+
+⸻
+
+Recipe: Hurricane
+Base Spirit: Rum
+Taste Profile: Sweet, Tropical, Strong
+Ingredients: Dark and light rum, passion fruit juice, lemon juice
+Instructions: Shake with ice, serve over ice.
+
+⸻
+
+Recipe: Singapore Sling
+Base Spirit: Gin
+Taste Profile: Fruity, Sweet, Herbal
+Ingredients: Gin, cherry liqueur, pineapple juice, lime juice, bitters
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Army & Navy
+Base Spirit: Gin
+Taste Profile: Nutty, Sour, Balanced
+Ingredients: 2 oz gin, 0.75 oz lemon juice, 0.75 oz orgeat
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Southside
+Base Spirit: Gin
+Taste Profile: Fresh, Minty, Bright
+Ingredients: Gin, lime juice, simple syrup, mint
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Yellow Bird
+Base Spirit: Rum
+Taste Profile: Sweet, Herbal, Tropical
+Ingredients: Rum, Galliano, triple sec, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: El Presidente
+Base Spirit: Rum
+Taste Profile: Smooth, Sweet, Elegant
+Ingredients: White rum, orange curaçao, dry vermouth, grenadine
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Caipiroska
+Base Spirit: Vodka
+Taste Profile: Tart, Fresh, Strong
+Ingredients: Vodka, lime, sugar
+Instructions: Muddle lime and sugar, add vodka and ice.
+
+⸻
+
+Recipe: Mexican Firing Squad
+Base Spirit: Tequila
+Taste Profile: Spicy, Sour, Savory
+Ingredients: Tequila, lime juice, grenadine, bitters
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Batanga
+Base Spirit: Tequila
+Taste Profile: Salty, Fizzy, Bright
+Ingredients: Tequila, lime juice, cola, salt rim
+Instructions: Build over ice, stir.
+
+⸻
+
+Recipe: Ranch Water
+Base Spirit: Tequila
+Taste Profile: Crisp, Light, Refreshing
+Ingredients: Tequila, lime juice, sparkling water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Matador
+Base Spirit: Tequila
+Taste Profile: Fruity, Sweet, Tart
+Ingredients: Tequila, pineapple juice, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Blue Lagoon
+Base Spirit: Vodka
+Taste Profile: Sweet, Citrus, Bright
+Ingredients: Vodka, blue curaçao, lemonade
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Screwdriver
+Base Spirit: Vodka
+Taste Profile: Simple, Citrusy, Smooth
+Ingredients: Vodka, orange juice
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Greyhound
+Base Spirit: Vodka
+Taste Profile: Bitter, Tart, Refreshing
+Ingredients: Vodka, grapefruit juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Salty Dog
+Base Spirit: Vodka
+Taste Profile: Tart, Salty, Bright
+Ingredients: Vodka, grapefruit juice, salt rim
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Kamikaze
+Base Spirit: Vodka
+Taste Profile: Sharp, Sour, Strong
+Ingredients: Vodka, triple sec, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Lemon Drop
+Base Spirit: Vodka
+Taste Profile: Sweet, Sour, Bright
+Ingredients: Vodka, lemon juice, simple syrup
+Instructions: Shake with ice, strain into sugar-rimmed glass.
+
+⸻
+
+Recipe: Sea Breeze
+Base Spirit: Vodka
+Taste Profile: Tart, Fruity, Light
+Ingredients: Vodka, cranberry juice, grapefruit juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Bay Breeze
+Base Spirit: Vodka
+Taste Profile: Sweet, Tropical, Light
+Ingredients: Vodka, cranberry juice, pineapple juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Cape Codder
+Base Spirit: Vodka
+Taste Profile: Tart, Simple, Crisp
+Ingredients: Vodka, cranberry juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Martini
+Base Spirit: Vodka
+Taste Profile: Dry, Clean, Strong
+Ingredients: Vodka, dry vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Gibson
+Base Spirit: Gin
+Taste Profile: Dry, Savory, Crisp
+Ingredients: Gin, dry vermouth, cocktail onion
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Martinez
+Base Spirit: Gin
+Taste Profile: Sweet, Herbal, Rich
+Ingredients: Gin, sweet vermouth, maraschino liqueur, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Hanky Panky
+Base Spirit: Gin
+Taste Profile: Bitter, Herbal, Strong
+Ingredients: Gin, sweet vermouth, Fernet-Branca
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Last Word
+Base Spirit: Gin
+Taste Profile: Herbal, Sour, Balanced
+Ingredients: Gin, green chartreuse, maraschino, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Bijou
+Base Spirit: Gin
+Taste Profile: Herbal, Strong, Rich
+Ingredients: Gin, sweet vermouth, green chartreuse, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Blood & Sand
+Base Spirit: Whiskey
+Taste Profile: Fruity, Smoky, Balanced
+Ingredients: Scotch, cherry liqueur, orange juice, sweet vermouth
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Rob Roy
+Base Spirit: Whiskey
+Taste Profile: Sweet, Strong, Smooth
+Ingredients: Scotch, sweet vermouth, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Algonquin
+Base Spirit: Whiskey
+Taste Profile: Dry, Fruity, Sharp
+Ingredients: Rye whiskey, dry vermouth, pineapple juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Gold Rush
+Base Spirit: Whiskey
+Taste Profile: Sweet, Sour, Smooth
+Ingredients: Bourbon, lemon juice, honey syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Brown Derby
+Base Spirit: Whiskey
+Taste Profile: Citrus, Sweet, Balanced
+Ingredients: Bourbon, grapefruit juice, honey syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Ward Eight
+Base Spirit: Whiskey
+Taste Profile: Fruity, Tart, Bold
+Ingredients: Rye whiskey, lemon juice, orange juice, grenadine
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Vieux Carré
+Base Spirit: Whiskey
+Taste Profile: Rich, Spiced, Strong
+Ingredients: Rye whiskey, cognac, sweet vermouth, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Seelbach
+Base Spirit: Whiskey
+Taste Profile: Bright, Bitter, Fizzy
+Ingredients: Bourbon, orange liqueur, bitters, champagne
+Instructions: Build in flute.
+
+⸻
+
+Recipe: Mint Smash
+Base Spirit: Whiskey
+Taste Profile: Fresh, Sweet, Herbal
+Ingredients: Bourbon, mint, simple syrup
+Instructions: Muddle mint and syrup, add bourbon and ice.
+
+⸻
+
+Recipe: Japanese Cocktail
+Base Spirit: Brandy
+Taste Profile: Nutty, Sweet, Dry
+Ingredients: Cognac, orgeat, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Stinger
+Base Spirit: Brandy
+Taste Profile: Minty, Sweet, Strong
+Ingredients: Cognac, crème de menthe
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Brandy Crusta
+Base Spirit: Brandy
+Taste Profile: Citrusy, Dry, Elegant
+Ingredients: Cognac, curaçao, lemon juice, bitters
+Instructions: Shake with ice, strain into sugared glass.
+
+⸻
+
+Recipe: Jack Rose
+Base Spirit: Brandy
+Taste Profile: Tart, Fruity, Bright
+Ingredients: Applejack, lemon or lime juice, grenadine
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Metropolitan
+Base Spirit: Brandy
+Taste Profile: Sweet, Smooth, Strong
+Ingredients: Brandy, sweet vermouth, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Corpse Reviver No. 1
+Base Spirit: Brandy
+Taste Profile: Strong, Herbal, Dry
+Ingredients: Cognac, Calvados, sweet vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Rum Old Fashioned
+Base Spirit: Rum
+Taste Profile: Sweet, Rich, Strong
+Ingredients: Aged rum, sugar, bitters
+Instructions: Muddle sugar and bitters, add rum and ice.
+
+⸻
+
+Recipe: Rum Punch
+Base Spirit: Rum
+Taste Profile: Sweet, Fruity, Light
+Ingredients: Rum, citrus juices, sugar
+Instructions: Mix and serve over ice.
+
+⸻
+
+Recipe: Ti’ Punch
+Base Spirit: Rum
+Taste Profile: Strong, Bright, Dry
+Ingredients: Rhum agricole, lime coin, sugar
+Instructions: Stir gently, no ice.
+
+⸻
+
+Recipe: Queen’s Park Swizzle
+Base Spirit: Rum
+Taste Profile: Minty, Bitter, Refreshing
+Ingredients: Rum, lime juice, simple syrup, mint, bitters
+Instructions: Swizzle with crushed ice.
+
+⸻
+
+Recipe: Navy Grog
+Base Spirit: Rum
+Taste Profile: Tart, Strong, Spiced
+Ingredients: Blend of rums, lime juice, grapefruit juice, honey syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Rum Runner
+Base Spirit: Rum
+Taste Profile: Sweet, Fruity, Strong
+Ingredients: Light and dark rum, banana liqueur, blackberry liqueur, juices
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Scorpion
+Base Spirit: Rum
+Taste Profile: Citrus, Strong, Shared
+Ingredients: Rum, brandy, orange juice, lemon juice
+Instructions: Mix and serve over ice.
+
+⸻
+
+Recipe: Fog Cutter
+Base Spirit: Rum
+Taste Profile: Complex, Citrus, Strong
+Ingredients: Rum, gin, brandy, citrus juices, sherry float
+Instructions: Shake, strain, float sherry.
+
+⸻
+
+Recipe: Saturn
+Base Spirit: Gin
+Taste Profile: Tropical, Tart, Bright
+Ingredients: Gin, lemon juice, passion fruit syrup, orgeat
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Jungle Bird
+Base Spirit: Rum
+Taste Profile: Bitter, Tropical, Balanced
+Ingredients: Dark rum, Campari, pineapple juice, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Painkiller No. 2
+Base Spirit: Rum
+Taste Profile: Creamy, Sweet, Smooth
+Ingredients: Dark rum, pineapple juice, orange juice, coconut cream
+Instructions: Shake with ice, serve.
+
+⸻
+
+Recipe: Hemingway Daiquiri
+Base Spirit: Rum
+Taste Profile: Dry, Tart, Crisp
+Ingredients: White rum, lime juice, grapefruit juice, maraschino
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Hotel Nacional
+Base Spirit: Rum
+Taste Profile: Fruity, Smooth, Elegant
+Ingredients: White rum, apricot liqueur, lime juice, pineapple juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Rum Flip
+Base Spirit: Rum
+Taste Profile: Rich, Creamy, Sweet
+Ingredients: Rum, sugar, whole egg
+Instructions: Shake vigorously, strain.
+
+⸻
+
+Recipe: Gin Rickey
+Base Spirit: Gin
+Taste Profile: Dry, Refreshing, Light
+Ingredients: Gin, lime juice, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Rickey
+Base Spirit: Vodka
+Taste Profile: Crisp, Tart, Light
+Ingredients: Vodka, lime juice, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Tequila Rickey
+Base Spirit: Tequila
+Taste Profile: Bright, Dry, Refreshing
+Ingredients: Tequila, lime juice, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Bourbon Smash
+Base Spirit: Whiskey
+Taste Profile: Fresh, Sweet, Herbal
+Ingredients: Bourbon, lemon wedges, mint, simple syrup
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Gin Smash
+Base Spirit: Gin
+Taste Profile: Bright, Herbal, Fresh
+Ingredients: Gin, lemon wedges, mint, simple syrup
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Vodka Smash
+Base Spirit: Vodka
+Taste Profile: Light, Citrusy, Fresh
+Ingredients: Vodka, lemon, mint, simple syrup
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Tequila Smash
+Base Spirit: Tequila
+Taste Profile: Bright, Herbal, Citrusy
+Ingredients: Tequila, lemon, mint, simple syrup
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Rum Smash
+Base Spirit: Rum
+Taste Profile: Sweet, Fresh, Balanced
+Ingredients: Rum, lemon, mint, simple syrup
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Brandy Smash
+Base Spirit: Brandy
+Taste Profile: Smooth, Sweet, Herbal
+Ingredients: Brandy, mint, lemon, sugar
+Instructions: Muddle and shake with ice.
+
+⸻
+
+Recipe: Whiskey Flip
+Base Spirit: Whiskey
+Taste Profile: Rich, Creamy, Strong
+Ingredients: Whiskey, sugar, whole egg
+Instructions: Shake vigorously, strain.
+
+⸻
+
+Recipe: Gin Flip
+Base Spirit: Gin
+Taste Profile: Creamy, Herbal, Smooth
+Ingredients: Gin, sugar, whole egg
+Instructions: Shake vigorously, strain.
+
+⸻
+
+Recipe: Vodka Flip
+Base Spirit: Vodka
+Taste Profile: Creamy, Light, Smooth
+Ingredients: Vodka, sugar, whole egg
+Instructions: Shake vigorously, strain.
+
+⸻
+
+Recipe: Tequila Flip
+Base Spirit: Tequila
+Taste Profile: Rich, Smooth, Bold
+Ingredients: Tequila, sugar, whole egg
+Instructions: Shake vigorously, strain.
+
+⸻
+
+Recipe: Rum Flip Classic
+Base Spirit: Rum
+Taste Profile: Sweet, Creamy, Warm
+Ingredients: Rum, sugar, egg, nutmeg
+Instructions: Shake and strain, garnish nutmeg.
+
+⸻
+
+Recipe: Whiskey Highball
+Base Spirit: Whiskey
+Taste Profile: Light, Crisp, Refreshing
+Ingredients: Whiskey, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Gin Highball
+Base Spirit: Gin
+Taste Profile: Clean, Dry, Refreshing
+Ingredients: Gin, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Highball
+Base Spirit: Vodka
+Taste Profile: Neutral, Crisp, Light
+Ingredients: Vodka, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Tequila Highball
+Base Spirit: Tequila
+Taste Profile: Bright, Clean, Light
+Ingredients: Tequila, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rum Highball
+Base Spirit: Rum
+Taste Profile: Sweet, Light, Fizzy
+Ingredients: Rum, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brandy Highball
+Base Spirit: Brandy
+Taste Profile: Smooth, Light, Crisp
+Ingredients: Brandy, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Whiskey Collins
+Base Spirit: Whiskey
+Taste Profile: Citrusy, Light, Refreshing
+Ingredients: Whiskey, lemon juice, simple syrup, soda water
+Instructions: Build over ice, top soda.
+
+⸻
+
+Recipe: Vodka Collins
+Base Spirit: Vodka
+Taste Profile: Clean, Citrusy, Light
+Ingredients: Vodka, lemon juice, simple syrup, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rum Collins
+Base Spirit: Rum
+Taste Profile: Sweet, Citrusy, Light
+Ingredients: Rum, lemon juice, simple syrup, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brandy Collins
+Base Spirit: Brandy
+Taste Profile: Smooth, Citrus, Light
+Ingredients: Brandy, lemon juice, simple syrup, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Gin Buck
+Base Spirit: Gin
+Taste Profile: Spicy, Citrusy, Refreshing
+Ingredients: Gin, lemon juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Whiskey Buck
+Base Spirit: Whiskey
+Taste Profile: Spicy, Bright, Balanced
+Ingredients: Whiskey, lemon juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rum Buck
+Base Spirit: Rum
+Taste Profile: Sweet, Spicy, Fresh
+Ingredients: Rum, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Tequila Buck
+Base Spirit: Tequila
+Taste Profile: Bright, Spicy, Crisp
+Ingredients: Tequila, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Buck
+Base Spirit: Vodka
+Taste Profile: Clean, Spicy, Light
+Ingredients: Vodka, lemon juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brandy Buck
+Base Spirit: Brandy
+Taste Profile: Warm, Spicy, Smooth
+Ingredients: Brandy, lemon juice, ginger beer
+Instructions: Build over ice.
+
+----
+
+Recipe: Paper Plane
+Base Spirit: Whiskey
+Taste Profile: Bitter, Bright, Balanced
+Ingredients: 0.75 oz bourbon, 0.75 oz Aperol, 0.75 oz Amaro Nonino, 0.75 oz lemon juice
+Instructions: Shake with ice, strain into coupe.
+
+⸻
+
+Recipe: Boulevardier Blanc
+Base Spirit: Whiskey
+Taste Profile: Herbal, Bitter, Smooth
+Ingredients: 1.5 oz bourbon, 1 oz Suze, 1 oz dry vermouth
+Instructions: Stir with ice, strain over ice.
+
+⸻
+
+Recipe: Kentucky Mule
+Base Spirit: Whiskey
+Taste Profile: Spicy, Refreshing, Tart
+Ingredients: 2 oz bourbon, 0.5 oz lime juice, ginger beer
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: New York Sour
+Base Spirit: Whiskey
+Taste Profile: Sour, Fruity, Bold
+Ingredients: 2 oz bourbon, 1 oz lemon juice, 0.75 oz simple syrup, red wine float
+Instructions: Shake base ingredients, strain, float wine.
+
+⸻
+
+Recipe: Lynchburg Lemonade
+Base Spirit: Whiskey
+Taste Profile: Sweet, Citrusy, Light
+Ingredients: 2 oz Tennessee whiskey, 1 oz triple sec, lemonade, soda
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Monte Carlo
+Base Spirit: Whiskey
+Taste Profile: Sweet, Herbal, Strong
+Ingredients: 2 oz rye whiskey, 0.5 oz Benedictine, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Bobby Burns
+Base Spirit: Whiskey
+Taste Profile: Herbal, Rich, Strong
+Ingredients: 2 oz scotch, 1 oz sweet vermouth, 0.25 oz Benedictine
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Black Manhattan
+Base Spirit: Whiskey
+Taste Profile: Bitter, Dark, Strong
+Ingredients: 2 oz rye whiskey, 1 oz Averna amaro, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Toronto
+Base Spirit: Whiskey
+Taste Profile: Bitter, Spiced, Bold
+Ingredients: 2 oz rye whiskey, 0.25 oz Fernet-Branca, 0.25 oz simple syrup, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: De La Louisiane
+Base Spirit: Whiskey
+Taste Profile: Herbal, Sweet, Strong
+Ingredients: Rye whiskey, sweet vermouth, Benedictine, absinthe, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Irish Maid
+Base Spirit: Whiskey
+Taste Profile: Fresh, Light, Citrusy
+Ingredients: Irish whiskey, lemon juice, simple syrup, cucumber
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Gold Fashioned
+Base Spirit: Whiskey
+Taste Profile: Sweet, Herbal, Smooth
+Ingredients: Bourbon, honey syrup, bitters
+Instructions: Stir with ice, strain over ice.
+
+⸻
+
+Recipe: Apple Old Fashioned
+Base Spirit: Whiskey
+Taste Profile: Fruity, Sweet, Warm
+Ingredients: Bourbon, apple brandy, sugar, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Maple Bourbon Smash
+Base Spirit: Whiskey
+Taste Profile: Sweet, Rich, Herbal
+Ingredients: Bourbon, lemon, maple syrup, mint
+Instructions: Muddle, shake with ice, strain.
+
+⸻
+
+Recipe: Revolver
+Base Spirit: Whiskey
+Taste Profile: Bitter, Coffee, Strong
+Ingredients: Bourbon, coffee liqueur, orange bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Rosita
+Base Spirit: Tequila
+Taste Profile: Bitter, Herbal, Complex
+Ingredients: Tequila reposado, Campari, sweet vermouth, dry vermouth, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Oaxaca Old Fashioned
+Base Spirit: Tequila
+Taste Profile: Smoky, Sweet, Bold
+Ingredients: Tequila reposado, mezcal, agave syrup, bitters
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Tommy’s Margarita
+Base Spirit: Tequila
+Taste Profile: Bright, Clean, Tart
+Ingredients: 2 oz tequila, 1 oz lime juice, 0.75 oz agave syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Tequila Negroni
+Base Spirit: Tequila
+Taste Profile: Bitter, Herbal, Strong
+Ingredients: Tequila, Campari, sweet vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: El Diablo
+Base Spirit: Tequila
+Taste Profile: Spicy, Fruity, Bright
+Ingredients: Tequila, crème de cassis, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brave Bull
+Base Spirit: Tequila
+Taste Profile: Rich, Strong, Sweet
+Ingredients: Tequila, coffee liqueur
+Instructions: Build over ice and stir.
+
+⸻
+
+Recipe: Siesta
+Base Spirit: Tequila
+Taste Profile: Grapefruit, Bitter, Bright
+Ingredients: Tequila, Campari, grapefruit juice, lime juice, simple syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Cantarito
+Base Spirit: Tequila
+Taste Profile: Citrusy, Light, Refreshing
+Ingredients: Tequila, orange juice, grapefruit juice, lime juice, soda
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Tequila Espresso Martini
+Base Spirit: Tequila
+Taste Profile: Bitter, Rich, Strong
+Ingredients: Tequila reposado, espresso, coffee liqueur
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Matador Royale
+Base Spirit: Tequila
+Taste Profile: Fruity, Fizzy, Bright
+Ingredients: Tequila, pineapple juice, prosecco
+Instructions: Build gently in flute.
+
+⸻
+
+Recipe: Mexican Mule
+Base Spirit: Tequila
+Taste Profile: Spicy, Crisp, Tart
+Ingredients: Tequila, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rosarita
+Base Spirit: Tequila
+Taste Profile: Sour, Fruity, Bold
+Ingredients: Tequila, lime juice, triple sec, grenadine float
+Instructions: Shake and strain, float grenadine.
+
+⸻
+
+Recipe: Tequila Sour
+Base Spirit: Tequila
+Taste Profile: Smooth, Sour, Balanced
+Ingredients: Tequila, lemon juice, simple syrup, egg white
+Instructions: Dry shake, shake with ice, strain.
+
+⸻
+
+Recipe: Vodka Gimlet
+Base Spirit: Vodka
+Taste Profile: Tart, Clean, Crisp
+Ingredients: Vodka, lime juice, simple syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Vodka Tonic
+Base Spirit: Vodka
+Taste Profile: Clean, Bitter, Refreshing
+Ingredients: Vodka, tonic water, lime
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Spritz
+Base Spirit: Vodka
+Taste Profile: Light, Fizzy, Bright
+Ingredients: Vodka, prosecco, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Chi Chi
+Base Spirit: Vodka
+Taste Profile: Creamy, Tropical, Sweet
+Ingredients: Vodka, pineapple juice, cream of coconut
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Woo Woo
+Base Spirit: Vodka
+Taste Profile: Sweet, Fruity, Light
+Ingredients: Vodka, peach schnapps, cranberry juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Sunrise
+Base Spirit: Vodka
+Taste Profile: Sweet, Fruity, Smooth
+Ingredients: Vodka, orange juice, grenadine
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Black Widow
+Base Spirit: Vodka
+Taste Profile: Tart, Dark, Fruity
+Ingredients: Vodka, blackberry liqueur, lime juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Vodka Negroni
+Base Spirit: Vodka
+Taste Profile: Bitter, Clean, Strong
+Ingredients: Vodka, Campari, sweet vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: French Martini
+Base Spirit: Vodka
+Taste Profile: Fruity, Sweet, Smooth
+Ingredients: Vodka, raspberry liqueur, pineapple juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Caipiroska Berry
+Base Spirit: Vodka
+Taste Profile: Fruity, Sweet, Tart
+Ingredients: Vodka, mixed berries, lime, sugar
+Instructions: Muddle and shake.
+
+⸻
+
+Recipe: Vodka Paloma
+Base Spirit: Vodka
+Taste Profile: Bitter, Citrusy, Light
+Ingredients: Vodka, grapefruit soda, lime juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Vodka Collins Lavender
+Base Spirit: Vodka
+Taste Profile: Floral, Light, Citrusy
+Ingredients: Vodka, lemon juice, lavender syrup, soda
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rum Swizzle
+Base Spirit: Rum
+Taste Profile: Fruity, Spiced, Refreshing
+Ingredients: Rum, lime juice, falernum, bitters
+Instructions: Swizzle with crushed ice.
+
+⸻
+
+Recipe: Corn ’n Oil
+Base Spirit: Rum
+Taste Profile: Sweet, Spiced, Rich
+Ingredients: Blackstrap rum, falernum, lime juice
+Instructions: Stir with ice.
+
+⸻
+
+Recipe: Rum Negroni
+Base Spirit: Rum
+Taste Profile: Bitter, Sweet, Strong
+Ingredients: Aged rum, Campari, sweet vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Cable Car
+Base Spirit: Rum
+Taste Profile: Spiced, Sweet, Sour
+Ingredients: Spiced rum, orange curaçao, lemon juice, simple syrup
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Barbados Rum Punch
+Base Spirit: Rum
+Taste Profile: Sweet, Citrus, Balanced
+Ingredients: Rum, lime juice, sugar, bitters, nutmeg
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Rum Sidecar
+Base Spirit: Rum
+Taste Profile: Dry, Citrusy, Strong
+Ingredients: Aged rum, triple sec, lemon juice
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Coconut Daiquiri
+Base Spirit: Rum
+Taste Profile: Creamy, Sweet, Tropical
+Ingredients: White rum, lime juice, cream of coconut
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Banana Daiquiri
+Base Spirit: Rum
+Taste Profile: Sweet, Fruity, Smooth
+Ingredients: Rum, banana liqueur, lime juice
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Rum Espresso Martini
+Base Spirit: Rum
+Taste Profile: Rich, Bitter, Strong
+Ingredients: Dark rum, espresso, coffee liqueur
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Caribbean Mule
+Base Spirit: Rum
+Taste Profile: Spicy, Bright, Refreshing
+Ingredients: Rum, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Rum Sour
+Base Spirit: Rum
+Taste Profile: Smooth, Tart, Balanced
+Ingredients: Rum, lemon juice, simple syrup, egg white
+Instructions: Dry shake, shake with ice.
+
+⸻
+
+Recipe: Kingston Negroni
+Base Spirit: Rum
+Taste Profile: Bitter, Funky, Strong
+Ingredients: Jamaican rum, Campari, sweet vermouth
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Gin Basil Smash
+Base Spirit: Gin
+Taste Profile: Herbal, Fresh, Bright
+Ingredients: Gin, lemon juice, simple syrup, basil
+Instructions: Muddle basil, shake with ice.
+
+⸻
+
+Recipe: Eastside
+Base Spirit: Gin
+Taste Profile: Crisp, Herbal, Light
+Ingredients: Gin, lime juice, simple syrup, cucumber, mint
+Instructions: Shake with ice, strain.
+
+⸻
+
+Recipe: Gin Paloma
+Base Spirit: Gin
+Taste Profile: Bitter, Citrusy, Refreshing
+Ingredients: Gin, grapefruit soda, lime juice
+Instructions: Build over ice.
+
+⸻
+
+Recipe: White Negroni
+Base Spirit: Gin
+Taste Profile: Bitter, Herbal, Dry
+Ingredients: Gin, Suze, Lillet Blanc
+Instructions: Stir with ice, strain.
+
+⸻
+
+Recipe: Gin Mule
+Base Spirit: Gin
+Taste Profile: Spicy, Bright, Crisp
+Ingredients: Gin, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Gin Sour
+Base Spirit: Gin
+Taste Profile: Smooth, Tart, Balanced
+Ingredients: Gin, lemon juice, simple syrup, egg white
+Instructions: Dry shake, shake with ice.
+
+⸻
+
+Recipe: Gin Espresso Martini
+Base Spirit: Gin
+Taste Profile: Herbal, Bitter, Strong
+Ingredients: Gin, espresso, coffee liqueur
+Instructions: Shake with ice.
+
+⸻
+
+Recipe: Gin Old Fashioned
+Base Spirit: Gin
+Taste Profile: Botanical, Dry, Strong
+Ingredients: Gin, sugar, bitters
+Instructions: Stir with ice.
+
+⸻
+
+Recipe: Gin Spritz
+Base Spirit: Gin
+Taste Profile: Light, Fizzy, Herbal
+Ingredients: Gin, prosecco, soda water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Gin Peach Smash
+Base Spirit: Gin
+Taste Profile: Fruity, Sweet, Fresh
+Ingredients: Gin, peach slices, lemon, simple syrup
+Instructions: Muddle and shake.
+
+⸻
+
+Recipe: Gin & Orange Blossom
+Base Spirit: Gin
+Taste Profile: Floral, Bright, Light
+Ingredients: Gin, orange juice, orange blossom water
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brandy Sour
+Base Spirit: Brandy
+Taste Profile: Smooth, Tart, Balanced
+Ingredients: Brandy, lemon juice, simple syrup, egg white
+Instructions: Dry shake, shake with ice.
+
+⸻
+
+Recipe: Brandy Daisy
+Base Spirit: Brandy
+Taste Profile: Bright, Citrusy, Light
+Ingredients: Brandy, lemon juice, orange liqueur, soda
+Instructions: Shake, top with soda.
+
+⸻
+
+Recipe: Brandy Fix
+Base Spirit: Brandy
+Taste Profile: Sweet, Fruity, Refreshing
+Ingredients: Brandy, simple syrup, citrus slices
+Instructions: Build over crushed ice.
+
+⸻
+
+Recipe: Brandy Flip Coffee
+Base Spirit: Brandy
+Taste Profile: Rich, Bitter, Creamy
+Ingredients: Brandy, coffee liqueur, egg
+Instructions: Shake vigorously.
+
+⸻
+
+Recipe: Calvados Cocktail
+Base Spirit: Brandy
+Taste Profile: Fruity, Dry, Elegant
+Ingredients: Calvados, sweet vermouth, bitters
+Instructions: Stir with ice.
+
+⸻
+
+Recipe: Norman Mule
+Base Spirit: Brandy
+Taste Profile: Spicy, Apple, Bright
+Ingredients: Apple brandy, lime juice, ginger beer
+Instructions: Build over ice.
+
+⸻
+
+Recipe: Brandy Manhattan
+Base Spirit: Brandy
+Taste Profile: Rich, Sweet, Strong
+Ingredients: Brandy, sweet vermouth, bitters
+Instructions: Stir with ice.
+
+⸻
+
+Recipe: Brandy Negroni
+Base Spirit: Brandy
+Taste Profile: Bitter, Bold, Complex
+Ingredients: Brandy, Campari, sweet vermouth
+Instructions: Stir with ice.
+
+⸻
+
+Recipe: Café Royal
+Base Spirit: Brandy
+Taste Profile: Warm, Sweet, Rich
+Ingredients: Brandy, sugar, hot coffee, lemon peel
+Instructions: Build and serve hot.
+
+⸻
+
+Recipe: Applejack Rabbit
+Base Spirit: Brandy
+Taste Profile: Citrusy, Spiced, Balanced
+Ingredients: Applejack, lemon juice, orange juice, maple syrup
+Instructions: Shake with ice.
+
+⸻
