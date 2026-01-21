@@ -8,13 +8,13 @@ from PIL import Image
 import io
 import shutil
 from langchain_chroma import Chroma
-# We don't need the smart splitter anymore; we are doing it manually
-from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_core.embeddings import Embeddings
 from langchain_core.documents import Document 
 
-# --- CONFIGURATION ---
-RETRIEVAL_K = 5  # Keep this low to avoid fetching noise
+# --- CONFIGURATION (UPDATED FOR MENU MODE) ---
+RETRIEVAL_K = 40  # Increased to catch ALL Tequila recipes in a small DB
 
 # --- MEMORY WIPE STARTUP ---
 if os.path.exists("chroma_db"):
@@ -44,15 +44,63 @@ def encode_image(image_path):
         img.save(buffered, format="JPEG", quality=85)
         return base64.b64encode(buffered.getvalue()).decode('utf-8')
 
+# --- CLEANING FUNCTIONS ---
+def clean_vision_output(raw_text):
+    hallucination_triggers = ["Question", "Answer", "label scanner", "list ONLY", "Examples", "do not describe"]
+    items = re.split(r'[,\n]', raw_text)
+    clean_items = []
+    for item in items:
+        item = item.strip()
+        if not item: continue
+        if any(trigger in item for trigger in hallucination_triggers): continue
+        clean_items.append(item)
+    return ", ".join(list(set(clean_items)))
+
+def clean_final_response(text):
+    text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+    cut_triggers = ["INSTRUCTION:", "CONSTRAINT:", "SOURCE RECIPES FOUND:", "DETECTED INVENTORY:"]
+    for trigger in cut_triggers:
+        if trigger in text:
+            text = text.split(trigger)[0]
+
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    clean_sentences = []
+    forbidden_starts = [
+        "You are a", "Use ONLY", "If the detected", "If no match", 
+        "Note:", "Instruction:", "Source Material", "User Question",
+        "Do NOT", "Match the", "Identify the", "Step 1", "Step 2"
+    ]
+    for s in sentences:
+        s_clean = s.strip()
+        if not s_clean: continue
+        is_bad = False
+        for bad in forbidden_starts:
+            if s_clean.startswith(bad):
+                is_bad = True
+                break
+        if not is_bad:
+            clean_sentences.append(s_clean)
+            
+    return " ".join(clean_sentences).strip()
+
+def clean_user_message_for_ui(full_text):
+    if "User Question:" in full_text:
+        return full_text.split("User Question:")[-1].strip()
+    return full_text
+
 def convert_history_to_ui(history_state):
     ui_messages = []
     for msg in history_state:
         role = msg.get('role', '')
         content = msg.get('content', '')
         ui_content = ""
-        if isinstance(content, list):
-            text_part = next((item['text'] for item in content if item['type'] == 'text'), "")
-            ui_content = f"🖼️ [Image Analyzed] {text_part}"
+        if role == 'user':
+            if isinstance(content, list):
+                text_part = next((item['text'] for item in content if item['type'] == 'text'), "")
+                clean_text = clean_user_message_for_ui(text_part)
+                ui_content = f"🖼️ [Image Uploaded] {clean_text}"
+            else:
+                ui_content = clean_user_message_for_ui(str(content))
         else:
             ui_content = str(content)
         ui_messages.append({"role": role, "content": ui_content})
@@ -74,49 +122,13 @@ def find_model_path(filename):
     if os.path.exists(filename): return os.path.abspath(filename)
     return filename
 
-def clean_vision_output(raw_text):
-    hallucination_triggers = ["Question", "Answer", "label scanner", "list ONLY", "Examples", "do not describe"]
-    items = re.split(r'[,\n]', raw_text)
-    clean_items = []
-    for item in items:
-        item = item.strip()
-        if not item: continue
-        if any(trigger in item for trigger in hallucination_triggers): continue
-        clean_items.append(item)
-    return ", ".join(list(set(clean_items)))
-
-def clean_final_response(text):
-    text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    clean_sentences = []
-    forbidden_starts = [
-        "You are a", "Use ONLY", "If the detected", "If no match", 
-        "Note:", "Instruction:", "Source Material", "User Question",
-        "Do NOT", "Match the", "Identify the", "Step 1", "Step 2"
-    ]
-    for s in sentences:
-        s_clean = s.strip()
-        if not s_clean: continue
-        is_bad = False
-        for bad in forbidden_starts:
-            if s_clean.startswith(bad):
-                is_bad = True
-                break
-        if not is_bad:
-            clean_sentences.append(s_clean)
-    return " ".join(clean_sentences)
-
-# --- STRICT PYTHON FILTER ---
+# --- LOGIC FILTER ---
 def smart_filter_context(raw_docs, detected_inventory):
-    """
-    Strictly removes irrelevant chunks.
-    """
     if not detected_inventory or detected_inventory == "Unknown Bottle":
         return raw_docs
         
     inv_lower = detected_inventory.lower()
     
-    # Identify the User's Spirit
     target_spirit = None
     if "tequila" in inv_lower or "julio" in inv_lower or "patron" in inv_lower or "fortaleza" in inv_lower: target_spirit = "tequila"
     elif "gin" in inv_lower or "bombay" in inv_lower or "tanqueray" in inv_lower: target_spirit = "gin"
@@ -124,26 +136,15 @@ def smart_filter_context(raw_docs, detected_inventory):
     elif "rum" in inv_lower or "bacardi" in inv_lower: target_spirit = "rum"
     elif "whiskey" in inv_lower or "bourbon" in inv_lower: target_spirit = "whiskey"
 
-    if not target_spirit:
-        return raw_docs # No strict match, return all
+    if not target_spirit: return raw_docs 
 
     filtered_docs = []
-    print(f"\n--- FILTERING FOR: {target_spirit.upper()} ---")
-    
     for doc in raw_docs:
         text = doc.page_content.lower()
-        
-        # KEY LOGIC: The chunk MUST contain the target spirit.
         if target_spirit in text:
-            print(f"✅ KEEP: {doc.page_content[:30]}...")
             filtered_docs.append(doc)
-        else:
-            print(f"❌ DROP: {doc.page_content[:30]}... (Missing '{target_spirit}')")
 
-    if not filtered_docs:
-        print("⚠️ Warning: No docs matched. Using fallback.")
-        return raw_docs
-        
+    if not filtered_docs: return raw_docs
     return filtered_docs
 
 # --- GLOBAL VARIABLES ---
@@ -194,7 +195,7 @@ def load_models(chat_model, vis_model, emb_model):
     
     return f"✅ Loaded: {chat_model} (No RAG)", gr.update(interactive=True), gr.update(interactive=True)
 
-# --- INGESTION (MANUAL HARD SLICING) ---
+# --- INGESTION ---
 def ingest(files):
     global VECTOR_STORE
     if not EMBED_MODEL: return "⚠️ Load Embedding Model first!"
@@ -207,40 +208,31 @@ def ingest(files):
     except:
         pass
 
+    splitter = RecursiveCharacterTextSplitter(separators=["\n\n", "---", "Recipe:"], chunk_size=200, chunk_overlap=0)
+    
     docs = []
     for path in files:
         try:
             if path.endswith(".txt"):
                 with open(path, "r", encoding="utf-8") as f:
                     full_text = f.read()
-                
-                # --- THE HARD SLICER ---
-                # We do NOT use LangChain's splitter. We split manually by "---".
-                # This guarantees that chunks never bleed into each other.
-                raw_chunks = full_text.split("---")
-                
-                for chunk in raw_chunks:
-                    clean_chunk = chunk.strip()
-                    if clean_chunk: # Only add if not empty
-                        docs.append(Document(page_content=clean_chunk, metadata={"source": path}))
-                        
+                docs.append(Document(page_content=full_text, metadata={"source": path}))
             elif path.endswith(".pdf"): 
-                # For PDFs, we still use the loader, but we can try to split by page or regex if needed.
-                # For now, assuming TXT is the primary concern.
                 loader = PyPDFLoader(path)
                 docs.extend(loader.load())
         except Exception as e:
             return f"Error loading {path}: {e}"
     
     if docs:
-        VECTOR_STORE.add_documents(docs)
-        return f"✅ Ingested {len(docs)} Distinct Recipe Cards."
+        final_chunks = splitter.split_documents(docs)
+        VECTOR_STORE.add_documents(final_chunks)
+        return f"✅ Ingested {len(final_chunks)} Recipes."
     return "No documents found."
 
 # --- AGENT PIPELINE ---
 def run_agent_pipeline(user_query, history_state, system_prompt, img_path, temp_slider, strict_mode):
     if not CHAT_MODEL:
-        yield history_state, "⚠️ Model not loaded."
+        yield history_state, "⚠️ Model not loaded.", ""
         return
 
     history_state = history_state or []
@@ -249,7 +241,7 @@ def run_agent_pipeline(user_query, history_state, system_prompt, img_path, temp_
     
     # 1. VISUAL LOOK-AHEAD
     if img_path:
-        yield history_state, "👁️ 🔍 Reading text on bottle..."
+        yield history_state, "👁️ 🔍 Reading text on bottle...", ""
         base64_img = encode_image(img_path)
         vision_prompt = "Transcribe the largest text on the label. Read the brand name and the type of spirit (e.g. Tequila, Gin, Vodka)."
         vision_msg = [
@@ -263,13 +255,15 @@ def run_agent_pipeline(user_query, history_state, system_prompt, img_path, temp_
             raw_vision = vision_response['choices'][0]['message']['content']
             cleaned_items = clean_vision_output(raw_vision)
             search_query = cleaned_items if cleaned_items else "Unknown Bottle"
-            yield history_state, f"🔍 Detected: {search_query}"
+            yield history_state, f"🔍 Detected: {search_query}", f"🔍 DETECTED: {search_query}"
         except:
             pass
 
-    # 2. RAG Retrieval & AGGRESSIVE FILTERING
+    # 2. RAG Retrieval
+    reasoning_log = f"🔎 INVENTORY DETECTED: {search_query}\n\n"
+    
     if VECTOR_STORE:
-        yield history_state, "📚 Searching & Filtering..."
+        yield history_state, "📚 Searching & Filtering...", reasoning_log
         
         if img_path and search_query != "Unknown Bottle":
             rag_query = f"Recipe with {search_query}"
@@ -277,15 +271,8 @@ def run_agent_pipeline(user_query, history_state, system_prompt, img_path, temp_
             rag_query = user_query
             
         raw_results = VECTOR_STORE.similarity_search(rag_query, k=RETRIEVAL_K)
-        
-        # --- APPLY FILTER ---
-        if img_path:
-            filtered_results = smart_filter_context(raw_results, search_query)
-        else:
-            filtered_results = raw_results
-        # -------------------------------
+        filtered_results = smart_filter_context(raw_results, search_query) if img_path else raw_results
 
-        # Deduplicate
         seen = set()
         unique_docs = []
         for d in filtered_results:
@@ -294,12 +281,13 @@ def run_agent_pipeline(user_query, history_state, system_prompt, img_path, temp_
                 seen.add(d.page_content)
         
         if unique_docs:
-            # We add double newlines to ensure visual separation in the prompt
-            final_context = "\n\n".join([d.page_content for d in unique_docs])
+            final_context = "\n---\n".join([d.page_content for d in unique_docs])
+            reasoning_log += f"📜 RECIPES FOUND & FILTERED ({len(unique_docs)}):\n{final_context[:500]}... [Truncated for Log]"
         else:
             final_context = "NO_DATA_FOUND"
+            reasoning_log += "❌ NO MATCHING RECIPES FOUND."
 
-    # 3. Prompt Construction
+    # 3. Prompt Construction (UPDATED FOR MULTIPLE SUGGESTIONS)
     full_text_prompt = ""
     current_sys_instruction = system_prompt
     
@@ -312,13 +300,15 @@ SOURCE RECIPES FOUND:
 {final_context}
 
 INSTRUCTION:
-1. State the name of the ONE recipe from the 'SOURCE RECIPES FOUND' that matches the inventory.
-2. List the ingredients the user is missing.
+1. Match the Inventory to the Recipes.
+2. If the user asks generally "What can I make?", list up to 5 distinct options from the Source Recipes.
+3. For each option, mention its Taste Profile.
+4. Briefly list missing ingredients for each.
 
 User Question: {user_query}
 """
         if strict_mode:
-            current_sys_instruction += " You are a Strict Bartender. Use ONLY the Source Recipes Found."
+            current_sys_instruction += " You are a Sommelier. Use the 'Taste Profile' data. Use ONLY the Source Recipes Found."
         else:
             current_sys_instruction += " You are a Helpful Mixologist."
             
@@ -328,10 +318,10 @@ User Question: {user_query}
 
     # 4. Payload & Generation
     if img_path:
-        yield history_state, "🍸 Calculating..."
+        yield history_state, "🍸 Calculating...", reasoning_log
         history_state.append({"role": "user", "content": full_text_prompt})
     else:
-        yield history_state, "🤔 Analyzing..."
+        yield history_state, "🤔 Analyzing...", reasoning_log
         history_state.append({"role": "user", "content": full_text_prompt})
 
     history_state.append({"role": "assistant", "content": ""})
@@ -346,12 +336,13 @@ User Question: {user_query}
     messages.append({"role": "user", "content": full_text_prompt})
 
     try:
+        # INCREASED MAX TOKENS TO 1024 TO ALLOW LISTING 5+ DRINKS
         stream = CHAT_MODEL.create_chat_completion(
             messages=messages, 
             stream=True, 
-            max_tokens=512, 
+            max_tokens=1024, 
             temperature=temp_slider,
-            stop=["###", "User Request:", "USER INVENTORY", "User Question:", "Source Material"] 
+            stop=["###", "User Request:", "USER INVENTORY", "User Question:", "Source Material", "INSTRUCTION:", "CONSTRAINT:"] 
         )
         
         full_raw_response = ""
@@ -361,22 +352,22 @@ User Question: {user_query}
                 full_raw_response += content_chunk
                 clean_display = clean_final_response(full_raw_response)
                 history_state[-1]["content"] = clean_display
-                yield history_state, f"✅ Active (Strict: {strict_mode})"
+                yield history_state, f"✅ Active (Strict: {strict_mode})", reasoning_log
                 
     except Exception as e:
         history_state[-1]["content"] = f"❌ Error: {e}"
-        yield history_state, "Error"
+        yield history_state, "Error", reasoning_log
 
 # --- WRAPPER ---
 def chat_wrapper(msg, history_state, img, sys_box, temp, strict):
     pipeline = run_agent_pipeline(msg, history_state, sys_box, img, temp, strict)
-    for updated_history, status_msg in pipeline:
+    for updated_history, status_msg, log_data in pipeline:
         ui_messages = convert_history_to_ui(updated_history)
-        yield ui_messages, status_msg, updated_history
+        yield ui_messages, status_msg, updated_history, log_data
 
 # --- UI LAYOUT ---
 with gr.Blocks(title="LocalAGI Bartender") as demo:
-    gr.Markdown("## 🍸 LocalAGI: Mixologist (Hard Slice)")
+    gr.Markdown("## 🍸 LocalAGI: Mixologist (Menu Mode)")
     history_state = gr.State([]) 
 
     found_files = get_gguf_files()
@@ -404,13 +395,17 @@ with gr.Blocks(title="LocalAGI Bartender") as demo:
             strict_mode = gr.Checkbox(value=True, label="Strict RAG Mode")
             
             with gr.Accordion("⚙️ System Prompt", open=False):
-                default_sys = "You are an expert Mixologist."
+                default_sys = "You are an expert Sommelier. Guide the user based on taste."
                 sys_box = gr.Textbox(value=default_sys, lines=4)
 
         with gr.Column(scale=2):
-            chatbot = gr.Chatbot(height=600, label="Live Interaction")
+            chatbot = gr.Chatbot(height=500, label="Live Interaction")
+            
+            with gr.Accordion("🧠 Agent Reasoning (Debug Log)", open=False):
+                reasoning_box = gr.TextArea(label="Internal Thoughts", interactive=False, lines=10)
+            
             with gr.Row():
-                msg = gr.Textbox(label="Request", placeholder="What can I make?", scale=4)
+                msg = gr.Textbox(label="Request", placeholder="What can I make? (Or ask: What is sweet?)", scale=4)
                 send_btn = gr.Button("Mix!", variant="primary", scale=1)
             with gr.Row():
                 img = gr.Image(type="filepath", height=200, label="Upload Inventory")
@@ -418,8 +413,8 @@ with gr.Blocks(title="LocalAGI Bartender") as demo:
 
     load_btn.click(load_models, [m_chat, m_vis, m_emb], [src, send_btn, ingest_btn])
     ingest_btn.click(ingest, up, ingest_status)
-    msg.submit(chat_wrapper, [msg, history_state, img, sys_box, temp_slider, strict_mode], [chatbot, src, history_state])
-    send_btn.click(chat_wrapper, [msg, history_state, img, sys_box, temp_slider, strict_mode], [chatbot, src, history_state])
+    msg.submit(chat_wrapper, [msg, history_state, img, sys_box, temp_slider, strict_mode], [chatbot, src, history_state, reasoning_box])
+    send_btn.click(chat_wrapper, [msg, history_state, img, sys_box, temp_slider, strict_mode], [chatbot, src, history_state, reasoning_box])
 
 if __name__ == "__main__":
     if not os.path.exists("models"): os.makedirs("models")
