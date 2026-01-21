@@ -24,11 +24,14 @@ cd LocalAGI
     pip install -r requirements.txt
 
 2. Download Models
+3. 
 Place these specific GGUF models in the /models folder:
-Role	Filename	Description
-LLM (The Brain)	MiniCPM-V-2_6-Q6_K.gguf	Logic & Chat model (8B).
-Vision Adapter	mmproj-MiniCPM-V-2_6-f16.gguf	Image encoder.
-Embeddings	nomic-embed-text-v1.5.Q4_K_M.gguf	Recipe indexing.
+
+LLM (The Brain)	MiniCPM-V-2_6-Q6_K.gguf
+
+Vision Adapter	mmproj-MiniCPM-V-2_6-f16.gguf	
+
+Embeddings	nomic-embed-text-v1.5.Q4_K_M.gguf	
 
 📖 How to Use
 1. Start the Server:
