@@ -16,7 +16,7 @@ Unlike basic search tools, LocalAGI features a **Python Logic Layer** that filte
 ## 🛠️ Installation & Setup
 
 ### 1. Clone & Install
-git clone [https://github.com/YOUR_USERNAME/LocalAGI.git](https://github.com/YOUR_USERNAME/LocalAGI.git)
+git clone [https://github.com/kazuo-shimada/LocalAGI.git](https://github.com/kazuo-shimada/LocalAGI.git)
 cd LocalAGI
 
     python3 -m venv venv
