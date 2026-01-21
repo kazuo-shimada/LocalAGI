@@ -23,9 +23,8 @@ cd LocalAGI
     source venv/bin/activate
     pip install -r requirements.txt
 
-2. Download Models
-3. 
-Place these specific GGUF models in the /models folder:
+2. Download Models 
+3. Place these specific GGUF models in the /models folder:
 
 LLM (The Brain)	MiniCPM-V-2_6-Q6_K.gguf
 
@@ -41,28 +40,9 @@ Embeddings	nomic-embed-text-v1.5.Q4_K_M.gguf
 5. Upload Inventory: Take a clear photo of your bottle(s).
 7. Ask: * "What can I make?" (Generates a menu)
     * "I want something sweet." (Filters by Taste Profile)
-📝 Recipe Formatting Guide (Critical)
-For the AI to function as a Sommelier, your text file must follow this structure exactly.
-* Separator: ---
-* Metadata: Include Base Spirit: and Taste Profile: lines.
-Example recipes.txt:
-Plaintext
-
-Recipe: Margarita
-Base Spirit: Tequila
-Taste Profile: Sour, Citrusy, Salty, Refreshing
-Ingredients: 2oz Blanco Tequila, 1oz Lime juice, 0.5oz Cointreau
-Instructions: Shake with ice and strain.
----
-Recipe: Oaxaca Old Fashioned
-Base Spirit: Tequila
-Taste Profile: Smoky, Spirit-Forward, Sipper
-Ingredients: 1.5oz Reposado, 0.5oz Mezcal, 1tsp Agave
-Instructions: Stir with ice.
----
 
 🏗️ Architecture
 * Frontend: Gradio 5 (Custom CSS & Layout)
 * Backend: Llama-cpp-python (Metal/M-Series Optimized)
 * Vector DB: ChromaDB (Ephemeral/Reset on Launch)
-	•	Orchestration: Custom Python Logic + LangChain
+•	Orchestration: Custom Python Logic + LangChain
